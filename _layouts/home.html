@@ -16,46 +16,66 @@ layout: base
     {% assign posts = site.posts %}
   {% endif %}
 
+  {% assign people = site.people | sort: 'order' %}
+  {% assign people_external = site.people_external | sort: 'order' %}
+  {% assign publications = site.publications | where:"selected","true" | sort: 'date' | reverse %}
 
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+  <a id="people"><h2>People</h2></a>
+  {%- if people.size > 0 -%}
+    <div class="people">
+      {%- for person in people -%}
+        <div class="person">
+          <a href="{{ person.link }}">
+            <div class="person-profile">
+              {{ person.content }}
+              <div class="person-text">
+                <p class="person-name">{{ person.name }}</p>
+                <p class="person-position">{{ person.position }}</p>
+              </div>
+            </div>
           </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+        </div>
       {%- endfor -%}
-    </ul>
+    </div>
+  {%- endif -%}
 
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
+  <h3>External Collaborators</h3>
+  {%- if people_external.size > 0 -%}
+    <div class="people">
+      {%- for person in people_external -%}
+        <div class="person">
+          <a href="{{ person.link }}">
+            <div class="person-profile">
+              {{ person.content }}
+              <div class="person-text">
+                <p class="person-name">{{ person.name }}</p>
+                <p class="person-position">{{ person.position }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
 
+  <h2>Selected Publications</h2>
+  {%- if publications.size > 0 -%}
+    <div class="publications">
+      <ul>
+        {%- for pub in publications -%}
+        <li class="pub">
+          <a href="{{ pub.link }}">
+            <h3>
+              {{ pub.title }}
+            </h3>
+          </a>
+          <p>{{ pub.authors }}</p>
+          <p>{{ pub.conference }}, {{ pub.date | date: "%B %Y" }}</p>
+        </li>
+        {%- endfor -%}
+      </ul>
+      <a class="page-link" href="{{ "publications" | relative_url }}">More...</a>
+    </div>
   {%- endif -%}
 
 </div>
