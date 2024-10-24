@@ -1,6 +1,6 @@
 ---
 layout: base
-title: [Security Seminar (SSL)]
+title: Security Seminar (SSL)
 permalink: /ssl/
 ---
 
