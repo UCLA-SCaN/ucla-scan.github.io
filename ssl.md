@@ -13,4 +13,4 @@ The goal of SSL is to get faculty and students who are working on computer secur
 **Interested in joining?**
 Please email [Liz](mailto:lizhikev@ucla.edu) and [Manda](mailto:mandat@ucla.edu) with your information (what year you are, who you work with) to be added to the security-seminar mailing list.
 
-<iframe src="https://calendar.google.com/calendar/embed?src=c_6c74fc976c11ef75f9bdb8d243553d49b29e154568ccaf5b2fab3b95ae2c3380%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_594d453e15bdf732599bf5864ec0217a5ac7b02deeb96eaa5937b19da709b423%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
