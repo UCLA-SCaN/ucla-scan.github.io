@@ -8,7 +8,7 @@
 layout: home
 ---
 
-ScaN (Security and Networking) is a research lab at the 
+ScaN (Security and Networking) Lab is at the 
 [University of California, Los Angeles](https://www.ee.ucla.edu/) 
 in the Electrical and Computer Engineering department.
 
