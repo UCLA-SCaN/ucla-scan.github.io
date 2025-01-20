@@ -1,7 +1,7 @@
 ---
 name: "Tom Pickett"
 position: "Research Assistant"
-link: "t-h-p.github.io"
+link: "https://t-h-p.github.io"
 order: 6
 ---
 
