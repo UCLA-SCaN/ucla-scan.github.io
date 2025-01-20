@@ -22,21 +22,26 @@ layout: base
 
   <a id="people"><h2>People</h2></a>
   {%- if people.size > 0 -%}
-    <div class="people">
-      {%- for person in people -%}
-        <div class="person">
-          <a href="{{ person.link }}">
-            <div class="person-profile">
-              {{ person.content }}
-              <div class="person-text">
-                <p class="person-name">{{ person.name }}</p>
-                <p class="person-position">{{ person.position }}</p>
+    {%- for person in people -%}
+      {% assign mod = forloop.index | modulo: 5 %}
+      {% if mod == 1 %}
+      <div class="people">
+        {%- endif -%}
+          <div class="person">
+            <a href="{{ person.link }}">
+              <div class="person-profile">
+                {{ person.content }}
+                <div class="person-text">
+                  <p class="person-name">{{ person.name }}</p>
+                  <p class="person-position">{{ person.position }}</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-      {%- endfor -%}
-    </div>
+            </a>
+          </div>
+        {% if mod == 0 or forloop.index == people.size - 1 %}
+      </div>
+      {%- endif -%}
+    {%- endfor -%}
   {%- endif -%}
 
   <h3>External Collaborators</h3>
