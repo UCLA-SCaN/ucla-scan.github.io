@@ -6,7 +6,7 @@ permalink: /ssl/
 
 # Security Seminar (SSL)
 
-We are very excited to organize a weekly 12 o'clock security seminar where students, visiting researchers, and faculty rotate to present ongoing work, interesting research, or just noteworthy security current events. 
+We are very excited to organize a weekly security seminar where students, visiting researchers, and faculty rotate to present ongoing work, interesting research, or just noteworthy security current events. 
 
 The goal of SSL is to get faculty and students who are working on computer security all in the same room to informally discuss and learn from each other (with food 😋). This seminar is only open to students who are actively participating in security-related research with CS/ECE faculty.
 
