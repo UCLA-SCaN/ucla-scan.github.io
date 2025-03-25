@@ -16,3 +16,4 @@ Our research takes a data-driven approach to understanding the Internet’s perf
 
 ## Joining the Lab
 We are looking for new students to join the lab! If you are interested getting involved, please reach out to [Liz](mailto:lizhikev@ucla.edu) or [Manda](mailto:mandat@ucla.edu).
+If you are interested in taking a class to learn more about our lab's research area, check out these courses: [ECE239AS: Computer Network Measurement and Security](https://lizizhikevich.github.io/ECE239AS-NetSec).
