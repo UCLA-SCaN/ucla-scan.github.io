@@ -62,6 +62,24 @@ layout: base
       {%- endfor -%}
     </div>
   {%- endif -%}
+  <h3>Alumni</h3>
+  {%- if people_alumni.size > 0 -%}
+    <div class="people">
+      {%- for person in people_external -%}
+        <div class="person">
+          <a href="{{ person.link }}">
+            <div class="person-profile">
+              {{ person.content }}
+              <div class="person-text">
+                <p class="person-name">{{ person.name }}</p>
+                <p class="person-position">{{ person.position }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
 
   <h2>Selected Publications</h2>
   {%- if publications.size > 0 -%}
