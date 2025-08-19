@@ -1,6 +1,6 @@
 ---
 name: "Liz Izhikevich"
-position: "Investigator"
+position: "Principal Investigator"
 link: "https://lizizhikevich.github.io/"
 order: 1
 ---
