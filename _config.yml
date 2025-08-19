@@ -72,4 +72,5 @@ minima:
 collections:
   - people
   - people_external
+  - people_alumni
   - publications
