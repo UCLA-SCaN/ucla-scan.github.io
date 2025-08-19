@@ -18,7 +18,7 @@ layout: base
 
   {% assign people = site.people | sort: 'order' %}
   {% assign people_external = site.people_external | sort: 'order' %}
-  {% assign people_external = site.people_alumni | sort: 'order' %}
+  {% assign people_alumni = site.people_alumni | sort: 'order' %}
   {% assign publications = site.publications | where:"selected","true" | sort: 'date' | reverse %}
 
   <a id="people"><h2>People</h2></a>
