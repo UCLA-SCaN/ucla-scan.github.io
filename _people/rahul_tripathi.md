@@ -1,7 +1,7 @@
 ---
 name: "Rahul Tripathi"
 position: "PhD Student"
-link: "https://rahultripathi0401.github.io"
+link: "https://rahultripathi0401.github.io/site"
 order: 4
 ---
 
