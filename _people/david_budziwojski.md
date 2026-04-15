@@ -1,6 +1,6 @@
 ---
 name: "David Budziwojski"
-position: "Research Assistant"
+position: "PhD Student"
 link: "https://www.linkedin.com/in/david-budziwojski-5b2791224"
 order: 6
 ---
